@@ -4,6 +4,8 @@ Personal npm card for Alexander Trishin
 
 ## Usage
 
-```shell
+Via npx:
+
+```bash
 npx alexander-trishin
 ```

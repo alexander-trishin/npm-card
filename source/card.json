@@ -1,0 +1,41 @@
+{
+    "info": {
+        "name": "Alexander Trishin",
+        "nickname": "alexander-trishin",
+        "work": "Senior Software Engineer at EPAM Systems",
+        "npm": "alexander-trishin",
+        "github": "alexander-trishin",
+        "linkedin": "trishinalexander",
+        "web": "https://atrishin.onrender.com"
+    },
+    "layout": [
+        "{white {{name}}} {green /} {white {{nickname}}}",
+        "",
+        {
+            "label": "{blue.bold Work}",
+            "text": "{white {{work}}}"
+        },
+        "",
+        {
+            "label": "{white.bold npm}",
+            "text": "{white https://www.npmjs.com/}{red ~{{npm}}}"
+        },
+        {
+            "label": "{white.bold GitHub}",
+            "text": "{white https://github.com/}{green {{github}}}"
+        },
+        {
+            "label": "{white.bold LinkedIn}",
+            "text": "{white https://www.linkedin.com/in/}{blue {{linkedin}}}"
+        },
+        {
+            "label": "{white.bold Web}",
+            "text": "{cyan {{web}}}"
+        },
+        "",
+        {
+            "label": "{white.bold Card}",
+            "text": "{red npx} {white {{package}}}"
+        }
+    ]
+}
