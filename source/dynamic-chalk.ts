@@ -1,4 +1,7 @@
-import chalk = require('chalk');
+import { createColorize } from 'colorize-template';
+import pico from 'picocolors';
+
+const colorize = createColorize(pico);
 
 function dynamicChalk(parts: any, ...substitutions: any) {
     const rawResults = [];
@@ -20,7 +23,7 @@ function dynamicChalk(parts: any, ...substitutions: any) {
     const chalkParts: any = [cookedResults.join('')];
     chalkParts.raw = [rawResults.join('')];
 
-    return chalk(chalkParts);
+    return colorize(chalkParts);
 }
 
 export = dynamicChalk;

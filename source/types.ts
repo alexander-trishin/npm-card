@@ -1,5 +1,5 @@
-import chalk from 'chalk';
-import cliBoxes from 'cli-boxes';
+import type { Colors } from 'picocolors/types';
+import type { BoxStyle } from 'cli-boxes';
 
 interface IInfo {
     name: string;
@@ -25,6 +25,6 @@ export interface ICard {
 export interface IBoxifyOptions {
     margin?: number;
     padding?: number;
-    borderColor?: typeof chalk.ForegroundColor;
-    borderStyle?: cliBoxes.BoxStyle;
+    borderColor?: keyof Omit<Colors, 'isColorSupported'>;
+    borderStyle?: BoxStyle;
 }

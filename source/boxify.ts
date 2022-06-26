@@ -1,5 +1,5 @@
-import chalk from 'chalk';
 import cliBoxes from 'cli-boxes';
+import pico from 'picocolors';
 
 import stripAnsi from './strip-ansi';
 
@@ -29,7 +29,7 @@ const boxify = (text: string, options: IBoxifyOptions = {}) => {
     );
 
     const border = (side: keyof typeof borderStyle) => {
-        return chalk[borderColor](borderStyle[side]);
+        return pico[borderColor](borderStyle[side]);
     };
 
     const hr = border('top').repeat(contentLength + padding * 2);
