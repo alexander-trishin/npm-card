@@ -20,8 +20,11 @@
         "bin",
         "build"
     ],
+    "packageManager": "yarn@3.2.1",
     "scripts": {
-        "prepublishOnly": "rimraf build && ts-node index.ts"
+        "clear": "rimraf build",
+        "build": "ts-node index.ts",
+        "prepublish": "yarn clear && yarn build"
     },
     "devDependencies": {
         "@types/node": "16.11.41",
