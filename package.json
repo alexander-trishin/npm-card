@@ -4,7 +4,10 @@
     "private": true,
     "author": "Alexander Trishin",
     "description": "Personal npm card for Alexander Trishin",
-    "repository": "https://github.com/alexander-trishin/npm-card.git",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alexander-trishin/npm-card.git"
+    },
     "license": "MIT",
     "keywords": [
         "npm",
