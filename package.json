@@ -23,7 +23,7 @@
         "bin",
         "build"
     ],
-    "packageManager": "yarn@3.2.1",
+    "packageManager": "yarn@3.6.4",
     "scripts": {
         "clear": "rimraf build",
         "build": "ts-node index.ts",
